@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['auto', 'bus', 'car', 'cycle', 'motorcycle', 'truck', 'van']
+
+roboflow:
+  workspace: vehicle-counter-6wjc7
+  project: vehicle-detection-tvfiz
+  version: 1
+  license: Private
+  url: https://app.roboflow.com/vehicle-counter-6wjc7/vehicle-detection-tvfiz/1
