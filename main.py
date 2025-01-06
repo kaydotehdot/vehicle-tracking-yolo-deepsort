@@ -105,14 +105,14 @@ def main():
 
 
     if not all([eb_start_line, eb_end_line, wb_start_line, wb_end_line]):
-        print("Not all lines were drawn successfully. Exiting.")
+        print("Not all lines were drawn successfully.")
         sys.exit(1)
 
     try:
         distance_eb_m = float(input("\nEnter distance (m) between EB lines (EB Start -> EB End): "))
         distance_wb_m = float(input("Enter distance (m) between WB lines (WB Start -> WB End): "))
     except ValueError:
-        print("[ERROR] Invalid distance input. Exiting.")
+        print("Invalid distance input.")
         sys.exit(1)
 
     cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
